@@ -1,0 +1,17 @@
+#exportPattern("^[[:alpha:]]+")
+export(
+  "pistonSimulation",
+  "powerCircuitSimulation",
+  "simulationGroup",
+  
+  "availDis",
+  "cusumArl",
+  "cusumPfaCedNorm",
+  "cusumPfaCedBinom",
+  "cusumPfaCedPois",
+  "mahalanobisT2",
+  "randomizationTest",
+  "renewDis",
+  "shroArlPfaCedNorm",
+  "shroArlPfaCedPois"
+)
