@@ -1,5 +1,5 @@
-84ab741c00f91839060a2ba08b9199db *DESCRIPTION
-6615f15f9ae04e929bcf3ca3de5718b0 *NAMESPACE
+1cac579303d35c5a9c1386e2d8b21641 *DESCRIPTION
+4afce5dda65e9ff82a8e86e72cd5a644 *NAMESPACE
 0ad9923921ce55618d7b86dcb09cc074 *R/availDis.R
 1a026273da21006a5a640960f1a988b7 *R/cusum.R
 ab1547d038b16c9ccc2d1e4dbd274a10 *R/mahalanobisT2.R
@@ -114,7 +114,7 @@ b26638af1c075aabc70bc129e197f66d *inst/scripts/ch07.R
 688553259c3ef3e8a4e04c8accdb0f4a *inst/scripts/ch08.R
 d4b107263c7bd83dd58fa11d851b2b01 *inst/scripts/ch09.R
 f21d69288583ce22d85f480bbbf6a4bd *inst/scripts/ch10.R
-0557622813609a109436a6537f8cce6d *inst/scripts/ch11.R
+a87ff3122c5e7ed4010b288f25db67c7 *inst/scripts/ch11.R
 25692b7e17f8a1efffa089a11d6c518e *inst/scripts/ch12.R
 256146fde38a16964a37fab83f36ae1b *inst/scripts/ch13.R
 5d0e06e6d59a60ab8cd2dba81b15c354 *inst/scripts/ch14.R
