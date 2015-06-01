@@ -1,13 +1,12 @@
 availDis <- function(ttf, ttr, n, seed=NA, printSummary=TRUE){
-  require(boot)
   ttf <- as.numeric(ttf)
   ttr <- as.numeric(ttr)
   
   if(!is.na(seed))
     set.seed(seed)
   
-  as1 <- boot(data=ttf, statistic=function(x,i) mean(x[i]), R=n)$t
-  as2 <- boot(data=ttr, statistic=function(x,i) mean(x[i]), R=n)$t
+  as1 <- boot::boot(data=ttf, statistic=function(x,i) mean(x[i]), R=n)$t
+  as2 <- boot::boot(data=ttr, statistic=function(x,i) mean(x[i]), R=n)$t
   bootavail <- as1/(as1 + as2)
   if(printSummary){
     av1 <- mean(ttf)

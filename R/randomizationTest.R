@@ -1,7 +1,6 @@
 randomizationTest <- function(list, R = 500, 
                               calc, fun=NA, seed=NA, 
                               printSummary=TRUE){
-  require(boot)
   
   list <- as.list(list)
   list <- lapply(list, na.omit)
@@ -30,7 +29,7 @@ randomizationTest <- function(list, R = 500,
   if(!is.na(seed))
     set.seed(seed)
   
-  b <- boot(data=dat, statistic=stats, R=R, 
+  b <- boot::boot(data=dat, statistic=stats, R=R, 
             len=len, fun=fun, calc=calc)
   
   res <- data.frame(D = c(b$t, b$t0), 

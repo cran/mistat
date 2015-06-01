@@ -1,11 +1,11 @@
-1cac579303d35c5a9c1386e2d8b21641 *DESCRIPTION
+1a8506227cb1ccbdce868514acebb5b0 *DESCRIPTION
 4afce5dda65e9ff82a8e86e72cd5a644 *NAMESPACE
-0ad9923921ce55618d7b86dcb09cc074 *R/availDis.R
+1cfc4920e82d5514d0cb6377ae8d6650 *R/availDis.R
 1a026273da21006a5a640960f1a988b7 *R/cusum.R
 ab1547d038b16c9ccc2d1e4dbd274a10 *R/mahalanobisT2.R
 8a0493be336c8c289b766b5243877aa0 *R/pistonSimulation.R
 6b6d404b6ee05f15d00dd2df4f100882 *R/powerCircuitSimulation.R
-650fabf83480ca5b214340f3a445be7b *R/randomizationTest.R
+817152e96d46c59522f7b4db6e33b5bb *R/randomizationTest.R
 3b35e1eaf312149a54b03594cb0d20a4 *R/renewDis.R
 c8194e1a983672476f87b7e4132dab30 *R/shro.R
 d19052a543ac8993524f060df9e617e6 *R/simulationGroup.R
