@@ -10,7 +10,7 @@ library(mistat)
 library(AcceptanceSampling)
 
 as.data.frame(
-  find.plan(PRP=c(0.01, 0.05), 
+  find.plan(PRP=c(0.01, 0.95), 
             CRP=c(0.08, 0.05), 
             type="hypergeom", N=100))
 
@@ -22,12 +22,12 @@ p0 <- rep(c(0.01, 0.03), each=10)
 pt <- rep(seq(0.05, to=0.32, by=0.03), 2)
 
 res <-as.data.frame(
-  find.plan(PRP=c(p0[1], 0.05), 
+  find.plan(PRP=c(p0[1], 0.95), 
           CRP=c(pt[1], 0.05), 
           type="hypergeom", N=100))
 for(i in 2:20){
   res <- rbind(res,
-               find.plan(PRP=c(p0[i], 0.05), 
+               find.plan(PRP=c(p0[i], 0.95), 
                          CRP=c(pt[i], 0.05), 
                          type="hypergeom", N=100))
 }
@@ -42,13 +42,13 @@ p0 <- rep(c(0.01, 0.03), each=10)
 pt <- rep(seq(0.05, to=0.32, by=0.03), 2)
 
 res <-as.data.frame(
-  find.plan(PRP=c(p0[1], 0.20), 
-          CRP=c(pt[1], 0.10), 
+  find.plan(PRP=c(p0[1], 0.90), 
+          CRP=c(pt[1], 0.20), 
           type="hypergeom", N=100))
 for(i in 2:20){
   res <- rbind(res,
-               find.plan(PRP=c(p0[i], 0.1), 
-                         CRP=c(pt[i], 0.2), 
+               find.plan(PRP=c(p0[i], 0.90), 
+                         CRP=c(pt[i], 0.20), 
                          type="hypergeom", N=100))
 }
 res

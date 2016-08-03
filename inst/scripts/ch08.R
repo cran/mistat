@@ -268,7 +268,7 @@ invisible(
 ###################################################
 data(GASTURBINE)
 
-invisible(qcc(GASTURBINE))
+invisible(qcc(GASTURBINE, type="xbar"))
 
 abline(h=0.4508481 + 0.04601819*2/sqrt(5), lty="dotdash")
 

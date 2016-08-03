@@ -346,8 +346,7 @@ Rl <- shroArlPfaCedNorm(mean0=10,
                         n=5, 
                         delta=2.0, 
                         w=99, 
-                        seed=123, 
-                        returnDetails=TRUE)
+                        seed=123)
 
 boxplot(Rl$rls, 
         main="", 
