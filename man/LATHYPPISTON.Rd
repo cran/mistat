@@ -35,16 +35,17 @@ data(LATHYPPISTON)
 
 library(DiceEval)
 
-library(DiceView)
-
 Dice <- km(design=LATHYPPISTON[, !names(LATHYPPISTON) \%in\% "seconds"], 
             response=LATHYPPISTON[,"seconds"])
 
-sectionview(Dice, 
-            center=colMeans(LATHYPPISTON[, !names(LATHYPPISTON) \%in\% "seconds"]), 
-            conf_lev=c(0.5, 0.9, 0.95), 
-            title="", col_sur="darkgrey", lwd=2,
-            Xname=colnames(LATHYPPISTON[, !names(LATHYPPISTON) \%in\% "seconds"]))
+#library(DiceView)
+
+#sectionview(Dice, 
+#            center=colMeans(LATHYPPISTON[, !names(LATHYPPISTON) \%in\% "seconds"]), 
+#            conf_lev=c(0.5, 0.9, 0.95), 
+#            title="", col_sur="darkgrey", lwd=2,
+#            Xname=colnames(LATHYPPISTON[, !names(LATHYPPISTON) \%in\% "seconds"]))
+
 
 layout(1)
 }
